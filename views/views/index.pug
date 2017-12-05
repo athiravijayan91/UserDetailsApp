@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title Basic Form
+        body
+            h1 fill out this form
+            form(action='/savedata',method='POST')
+                div
+                    label(for='Firstname') Firstname:
+                    input(type='Firstname',name='Firstname',id='Firstname')
+                div
+                div
+                        label(for='Lastname') Lastname:
+                        input(type='Lastname',name='Lastname',id='Lastname')
+                div
+                div
+                    label(for='email') Email:
+                    input(type='email',name='email',id='email')
+                div
+                    label(for='age') Age:
+                    input(type='age',name='age',id='age')
+                div
+                    input(type='submit',value='Submit')
+
+

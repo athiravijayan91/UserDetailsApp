@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title Basic Form
+
+        body
+            h1 Edit data
+            form(action='/edit',method='POST')
+                div
+                    label(for='Firstname') Firstname :
+                    input#Firstname(name='Firstname',value= user.Firstname)
+                div
+                div
+                    label(for='Lastname') Lastname :
+                    input#Lastname(type='Lastname',name='Lastname',value= user.Lastname)
+                div
+                div
+                    label(for='email') Email :
+                    input#email(type='email',name='email',value= user.email)
+                div
+                    label(for='age') Age :
+                    input#age(type='age',name='age',value= user.age)
+                div
+                    input(type='submit',value='Save!')
